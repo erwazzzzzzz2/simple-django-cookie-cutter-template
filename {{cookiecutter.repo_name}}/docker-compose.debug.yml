@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  dev4containerdjango:
+  backend:
     image: '{{cookiecutter.django_image_name}}:{{cookiecutter.django_image_tag}}'
     build:
       context: .
