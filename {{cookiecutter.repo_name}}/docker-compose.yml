@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  backend:
+    image: '{{cookiecutter.django_image_name}}:{{cookiecutter.django_image_tag}}'
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./app:/app
+    environment:
+      - DB_HOST=postgresdb
+      - DB_NAME=d{{cookiecutter.db_hostname}}
+      - DB_USER={{cookiecutter.db_user}}
+      - DB_PASS={{cookiecutter.db_password}}
+      - DB_PORT={{cookiecutter.db_port}}
+    depends_on:
+      - postgresdb
+
+  postgresdb:
+    image: postgres:15-alpine
+    volumes: 
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB={{cookiecutter.db_hostname}}
+      - POSTGRES_USER={{cookiecutter.db_user}}
+      - POSTGRES_PASSWORD={{cookiecutter.db_password}}
+volumes:
+  db-data:
+
