@@ -1,0 +1,9 @@
+{
+    "repo_name":"django-project-repo",
+    "django_image_name":"django-image-name",
+    "django_image_tag": "dangoapp-LATEST",
+    "db_hostname": "db-hostname",
+    "db_user":"db-user",
+    "db_password": "changethis",
+    "db_port": 5432
+}
