@@ -12,10 +12,14 @@
 Its assumed VSCode is the IDE
 
 Make  a directory to conating you project and cd into it.
-Create a virtual environment and install cookiecutter  
+Create a virtual environment and install cookiecutter  using the command 
+
 ``` pip install cookiecutter ```
-Run the command
+
+Run the command:
+
 ```cookiecutter https://github.com/erwazzzzzzz2/simple-django-cookie-cutter-template.git```
+
 Choose values for the prompts or accept the defaults
 
 A new project folder should be created and inside this a DevContainer Django/Postgres project.
