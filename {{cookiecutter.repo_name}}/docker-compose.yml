@@ -10,7 +10,7 @@ services:
       - ./app:/app
     environment:
       - DB_HOST=postgresdb
-      - DB_NAME=d{{cookiecutter.db_hostname}}
+      - DB_NAME={{cookiecutter.db_hostname}}
       - DB_USER={{cookiecutter.db_user}}
       - DB_PASS={{cookiecutter.db_password}}
       - DB_PORT={{cookiecutter.db_port}}
