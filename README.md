@@ -36,3 +36,4 @@ If you want to change the Django project name use the command:
 ``` python manage.py rename_project <current_name> <new_name> ```
 
 See the repo https://github.com/erwazzzzzzz2/django-devcontainers  for details of the devcontainer set up, issues and so on.
+
