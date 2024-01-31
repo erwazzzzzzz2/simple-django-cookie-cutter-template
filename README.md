@@ -22,7 +22,7 @@ Run the command:
 
 Choose values for the prompts or accept the defaults
 
-A new project folder should be created and inside this a DevContainer Django/Postgres project.
+A new project folder should be created and inside; this a DevContainer Django/Postgres project.
 navigate into the project
 Select the VSCode command pallete and select Dev Containers: Rebuild Container 
 You containerized environment should run. You might to be asked to install the Docker Extension , this is a bug see the DevContainer repo README mentioned below.
