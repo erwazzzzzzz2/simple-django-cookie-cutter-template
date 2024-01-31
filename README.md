@@ -24,9 +24,11 @@ Select the VSCode command pallete and select Dev Containers: Rebuild Container
 You containerized environment should run. You might to be asked to install the Docker Extension , this is a bug see the DevContainer repo README mentioned below.
 
 Run the command below to start the application and check the database is created.
+
 ``` python manage.py run_app```
 
-If you want to change the Django project name use the command
+If you want to change the Django project name use the command:
+
 ``` python manage.py rename_project <current_name> <new_name> ```
 
 See the repo https://github.com/erwazzzzzzz2/django-devcontainers  for details of the devcontainer set up, issues and so on.
